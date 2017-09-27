@@ -4,7 +4,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Controller;
 
-import com.sinc.sat.apply.model.ApplyService;
+import com.sinc.sat.apply.service.ApplyService;
 
 @Controller
 public class ApplicantCtrl {
