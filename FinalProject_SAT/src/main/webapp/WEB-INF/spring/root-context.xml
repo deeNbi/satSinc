@@ -14,7 +14,7 @@
 		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd">
 	
 	<!-- 5. 스프링 빈 등록하기 위해서 추가 : 서비스와 퍼시스턴스레이어에있는 @service @repository 스캔 > instance 생성 > framework에서 관리 -->
-	<context:component-scan base-package="com.sinc.project.**"></context:component-scan>
+	<context:component-scan base-package="com.sinc.sat.**"></context:component-scan>
 
 	<!-- 1. DataSource 설정추가하고 JUnit 연결 테스트하기 --> 
 	<!-- jdbc conn == connection을 관리하는 factory 객체, property source -->

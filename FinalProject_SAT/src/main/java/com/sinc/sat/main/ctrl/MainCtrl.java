@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class MainCtrl {
-	@RequestMapping("/main.sinc")
+	@RequestMapping("/main.sat")
 	public String main(){
 		System.out.println("MainCtrl main");
 		return "home";
