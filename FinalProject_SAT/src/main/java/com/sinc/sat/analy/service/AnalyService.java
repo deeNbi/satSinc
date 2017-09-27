@@ -1,4 +1,4 @@
-package com.sinc.sat.analy.model;
+package com.sinc.sat.analy.service;
 
 public interface AnalyService {
 	

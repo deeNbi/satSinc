@@ -1,4 +1,4 @@
-package com.sinc.sat.analy.model;
+package com.sinc.sat.analy.service;
 
 import javax.annotation.Resource;
 
