@@ -1,4 +1,4 @@
-package com.sinc.sat.apply.model;
+package com.sinc.sat.apply.service;
 
 public interface ApplyService {
 
