@@ -131,81 +131,91 @@
                             </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="info-block panel panel-default">
-                <div class="panel-heading">
-                  <h4>서류평가 정보</h4>
-                </div>
-                <div class="panel-body">
-                  <table class="no-border no-strip skills">
-                    <tbody class="no-border-x no-border-y">                                   
-                     <tr>
-                        <td class="item">직무점수:<span class="icon s7-portfolio"></span></td>
-                        <td>40</td>
-                      </tr>
-                      <tr>
-                        <td class="item">인성점수:<span class="icon s7-gift"></span></td>
-                        <td>30</td>
-                      </tr>
-                      <tr>
-                        <td class="item">자기소개서 점수:<span class="icon s7-phone"></span></td>
-                        <td>30</td>
-                      </tr>
-                      <tr>
-                        <td class="item">총점:<span class="icon s7-map-marker"></span></td>
-                        <td>100</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+        	<div class="row">
+ 		 <div class="col-md-12">
+            <div class="widget widget-fullwidth widget-small">
+              <div class="widget-head">
+                <div class="tools"></div>
+                <div class="title"><h4>서류평가정보</h4></div>
               </div>
+              <table class="table table-fw-widget">
+           <thead>
+                  <tr>
+                    <th width="16%">인성점수1</th>
+                    <th width="16%">인성점수2</th>
+                    <th width="16%">인성점수3</th>
+                    <th width="16%">인성점수4</th>
+                    <th width="16%">자기소개서점수</th>
+                     <th width="16%">총점</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td width="16%">10</td>
+                    <td width="16%">10</td>
+                    <td width="16%">10</td>
+                    <td width="16%">10</td>
+                     <td width="16%">10</td>
+                    <td width="16%">10</td>
+                  </tr>
+ 					<tr>
+                    <td width="16%"></td>
+                    <td width="16%"></td>
+                    <td width="16%"></td>
+                    <td width="16%"></td>
+                     <td width="16%"></td>
+                    <td width="16%"></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
           </div>
-   <div class="row">
-            <div class="col-sm-12">
-              <div class="info-block panel panel-default">
-                <div class="panel-heading">
-                  <h4>지원자 정보</h4>
-                </div>
-                <div class="panel-body">
-                  <table class="no-border no-strip skills">
-                    <tbody class="no-border-x no-border-y">
-                     <tr>
-                        <td class="item">지원번호:<span class="icon s7-portfolio"></span></td>
-                        <td>No.01</td>
-                      </tr>
-                      <tr>
-                        <td class="item">출신학교:<span class="icon s7-gift"></span></td>
-                        <td>서울대학교</td>
-                      </tr>
-                      <tr>
-                        <td class="item">전공:<span class="icon s7-phone"></span></td>
-                        <td>컴퓨터공학과</td>
-                      </tr>
-                      <tr>
-                        <td class="item">학점:<span class="icon s7-map-marker"></span></td>
-                        <td>3.87</td>
-                      </tr>
-                      <tr>
-                        <td class="item">어학점수:<span class="icon s7-global"></span></td>
-                        <td>970</td>
-                      </tr>
-                       <tr>
-                        <td class="item">자격증:<span class="icon s7-global"></span></td>
-                        <td>정보처리기사 / SQLD </td>
-                      </tr>
-                       <tr>
-                        <td class="item">경력:<span class="icon s7-global"></span></td>
-                        <td>신세계I&C 인턴</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+ 		</div>
+
+
+
+        
+		<div class="row">
+ 		 <div class="col-md-12">
+            <div class="widget widget-fullwidth widget-small">
+              <div class="widget-head">
+                <div class="tools"></div>
+                <div class="title"><h4>지원자정보</h4></div>
               </div>
+              <table class="table table-fw-widget">
+           <thead>
+                  <tr>
+                    <th width="16%">지원번호</th>
+                    <th width="16%">출신학교</th>
+                    <th width="16%">전공</th>
+                    <th width="16%">학점</th>
+                    <th width="16%">자격증</th>
+                     <th width="16%">경력</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td width="16%">No.01</td>
+                    <td width="16%">서울대학교</td>
+                    <td width="16%">컴퓨터공학과</td>
+                    <td width="16%">3.87</td>
+                     <td width="16%">정보처리기사 / SQLD</td>
+                    <td width="16%">신세계I&C 인턴</td>
+                  </tr>
+ 					<tr>
+                    <td width="16%"></td>
+                    <td width="16%"></td>
+                    <td width="16%"></td>
+                    <td width="16%"></td>
+                     <td width="16%"></td>
+                    <td width="16%"></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-</div>            
+          </div>
+ 		</div>
+ 		
   <div class="row">
           <div class="col-md-12">
             <div class="panel panel-default">
@@ -239,7 +249,6 @@
       </div>
     </div>
   
- <div class="row">    
  
     <div class="row invoice-footer">
 			<div class="col-md-12">

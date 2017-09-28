@@ -63,12 +63,6 @@
                       <input type="text"  class="form-control">
                     </div>
                   </div>
-                 <div class="form-group">
-                    <label class="col-sm-3 control-label">어학점수</label>
-                    <div class="col-sm-6">
-                      <input type="text"  class="form-control">
-                    </div>
-                  </div>
         		  <div class="form-group">
                     <label class="col-sm-3 control-label">자격증</label>
                     <div class="col-sm-6">
