@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository("applyDao")
 public class ApplyDaoImpl implements ApplyDao{
+	
 	@Resource(name="sqlSession")
 	private SqlSession session;
 	
