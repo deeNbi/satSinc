@@ -8,6 +8,6 @@ public class MainCtrl {
 	@RequestMapping("/main.sat")
 	public String main(){
 		System.out.println("MainCtrl main");
-		return "home";
+		return "index";
 	}
 }
