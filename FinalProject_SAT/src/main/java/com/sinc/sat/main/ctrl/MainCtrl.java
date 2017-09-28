@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MainCtrl {
 
 	@RequestMapping("/main.sat")
-	public String main() {
+	public String main(){
+
 		System.out.println("MainCtrl main");
 
 		return "index";

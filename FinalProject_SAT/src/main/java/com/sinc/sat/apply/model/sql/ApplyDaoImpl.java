@@ -11,6 +11,5 @@ public class ApplyDaoImpl implements ApplyDao{
 	@Resource(name="sqlSession")
 	private SqlSession session;
 	
-	private static final String ANALYPREFIX = "com.sinc.sat.mapper.analy.";
 	private static final String APPLYPREFIX  = "com.sinc.sat.mapper.apply.";
 }
