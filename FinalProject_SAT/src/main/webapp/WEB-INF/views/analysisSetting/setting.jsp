@@ -184,13 +184,27 @@
             <div id="accordion1" class="panel-group accordion">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne"><i class="icon s7-angle-down"></i>채용공고선택</a></h4>
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne"><i class="icon s7-angle-down"></i>채용 공고 선택</a></h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in">
                   <div class="panel-body">
-                          <div class="form-group">
-		                    <label>채용 공고 선택</label>
-		                    <input type="email" placeholder="" class="form-control">                 
+                               
+                  
+                     <div class="form-group">
+		                 <label></label>
+		                    <!-- <input type="email" placeholder="" class="form-control">    -->        
+		                  <div class="btn-group btn-hspace">
+								<button type="button" data-toggle="dropdown"class="btn btn-default dropdown-toggle">  &nbsp;&nbsp;&nbsp;신세계 I&C &nbsp; 채용 공고 선택&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="caret"></span></button>
+									<ul role="menu" class="dropdown-menu">
+					
+						 		<c:forEach items="${recruit}" var="RecruitVO">																	
+									<li><a href="#">${RecruitVO.recruit_name}</a></li>										
+								</c:forEach>
+										 
+							
+										
+									</ul>
+							</div>    
 		                  </div>
                   </div>
                 </div>
@@ -251,22 +265,22 @@
 		                
 		                  <div class="form-group">
 		                    <label>INNOVATION 가중치</label>
-		                    <input type="email" placeholder="INNOVATION" class="form-control">                 
+		                    <input type="email" placeholder="" class="form-control">                 
 		                  </div>
 		                  
 		                  <div class="form-group">
 		                    <label>COLLABORATION 가중치</label>
-		                    <input type="email" placeholder="COLLABORATION" class="form-control">                 
+		                    <input type="email" placeholder="" class="form-control">                 
 		                  </div>
 		
 		                 <div class="form-group">
 		                    <label>CHALLENGE 가중치</label>
-		                    <input type="email" placeholder="CHALLENGE" class="form-control">                 
+		                    <input type="email" placeholder="" class="form-control">                 
 		                  </div>
 		                  
 		                 <div class="form-group">
 		                    <label>FUN 가중치</label>
-		                    <input type="email" placeholder="FUN" class="form-control">                 
+		                    <input type="email" placeholder="" class="form-control">                 
 		                  </div>
 		                  
 		
@@ -297,7 +311,7 @@
  
  
       
-
+<!-- 
          <div class="row wizard-row">
           <div class="col-md-12 fuelux">
             <div class="block-wizard panel panel-default">
@@ -426,7 +440,7 @@
 
       
       
-      
+       -->
       
       
       

@@ -5,4 +5,11 @@
   
 <mapper namespace="com.sinc.sat.mapper.analy">	<!-- 깊은 뎁스를 주는게 용이 -->
 	
+		<select resultType="recruit"  id="listRecruit">
+		SELECT * 
+		FROM RECRUIT_TBL
+		</select>
+ 	
+	
+	
 </mapper>
