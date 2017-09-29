@@ -14,26 +14,6 @@ public class ApplicantCtrl {
 	@Resource(name = "applyService")
 	private ApplyService service;
 	
-	
-	
-////////////////////////////////////////////////////////////////////////////////////////
-	//로그인
-	@RequestMapping("/login.sat")
-	public String login() {
-		System.out.println("Ctrl login");
-		return "login/login";
-	}
-/*	
-	//로그아웃
-	@RequestMapping("/logout.sat")
-	public String logout() {
-		System.out.println("Ctrl logout");
-		return null;
-	}
-
-	*/
-	
-////////////////////////////////////////////////////////////////////////////////////////
 	//지원자분석
 	@RequestMapping("/applicantDatatables.sat")
 	public String applicantDatatables() {

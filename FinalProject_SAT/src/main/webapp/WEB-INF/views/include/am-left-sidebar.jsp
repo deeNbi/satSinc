@@ -1,6 +1,6 @@
     <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     
     <div class="am-left-sidebar">
       <div class="content">
@@ -35,6 +35,11 @@
             </ul>
           </li>
           <li class="parent"><a href="monitoring.sat"><i class="icon s7-monitor"></i><span>분석모니터링</span></a>          
+          </li>
+          <li class="parent">
+          	<a href="loginForm.sat">
+          	<i class="glyphicon glyphicon-log-in"></i>
+          	<span>login</span></a>
           </li>
         <!--Sidebar bottom content-->
       </div>

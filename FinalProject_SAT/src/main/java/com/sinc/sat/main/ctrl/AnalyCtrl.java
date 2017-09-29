@@ -43,6 +43,7 @@ public class AnalyCtrl {
 
 		return "analysisMonitoring/monitoring-history";
 	}
+	
 	@RequestMapping("/monitoringDatatables.sat")
 	public String monitoringDatatables() {
 		System.out.println("Ctrl monitoringDatatables");
