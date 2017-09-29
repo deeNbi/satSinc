@@ -9,6 +9,7 @@ public class AnalysisVO {
 	private String analy_id;
 	private int tm_mono;
 	private int dl_mono;
+	
 	public int getAnaly_no() {
 		return analy_no;
 	}
