@@ -1,15 +1,23 @@
 package com.sinc.sat.analy.service;
 
+
+import java.util.List;
+
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+
 
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
 import com.sinc.sat.analy.model.sql.AnalyDao;
+
+import com.sinc.sat.analy.model.vo.RecruitVO;
+
 import com.sinc.sat.analy.model.vo.EmployeeVO;
+
 
 @Service("analyService")
 public class AnalyServiceImpl implements AnalyService {
@@ -35,6 +43,17 @@ public class AnalyServiceImpl implements AnalyService {
 		dao.keepLoginRow(map);
 	}
 
+
+	//채용 공고 내용을 가져옴
+	@Override
+	public List<RecruitVO> listRecruit() {
+		System.out.println("AnalyServiceImpl listRecruit");
+		System.out.println(dao.listRecruitRow().toString());
+		
+		return dao.listRecruitRow();
+	}
+
+
 	@Override
 	public EmployeeVO checkUserWithSessionKey(String value) {
 		System.out.println("Service checkUserWithSessionKey()");
@@ -51,4 +70,5 @@ public class AnalyServiceImpl implements AnalyService {
 		
 		dao.removeCookieRow(map);
 	}
+
 }

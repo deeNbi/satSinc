@@ -4,6 +4,16 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
 <mapper namespace="com.sinc.sat.mapper.analy">	<!-- 깊은 뎁스를 주는게 용이 -->
+
+	
+		<select resultType="recruit"  id="listRecruit">
+		SELECT * 
+		FROM RECRUIT_TBL
+		</select>
+ 	
+	
+	
+
 	<select id="login" parameterType="emp" resultType="emp">
 		SELECT	EMP_NO, NAME, DEPT, JGRADE, PH_CON, USER_ID, USER_PWD, ADMIN_CK, SESSIONKEY, SESSIONLIMIT
 		FROM	EMPLOYEE_TBL
@@ -29,4 +39,8 @@
 		SET		SESSIONLIMIT = #{next}
 		WHERE	SESSIONKEY=#{sessionId}
 	</update>
+
+
+
+
 </mapper>

@@ -3,6 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
 	<typeAliases>
 	
 		<!-- analy -->
@@ -12,7 +13,7 @@
 		<typeAlias type="com.sinc.sat.analy.model.vo.PositiveVO" alias="posit"/> 
 		<typeAlias type="com.sinc.sat.analy.model.vo.TM_settingVO" alias="tmSetting"/> 
 		<typeAlias type="com.sinc.sat.analy.model.vo.WeightVO" alias="weight"/> 
-		
+		<typeAlias type="com.sinc.sat.analy.model.vo.RecruitVO" alias="recruit"/> 
 		<!-- applicant  -->
 		<typeAlias type="com.sinc.sat.apply.model.vo.ApplicantVO" alias="applicant"/> 
 		<typeAlias type="com.sinc.sat.apply.model.vo.DL_resultVO" alias="dlResult"/> 
@@ -24,6 +25,7 @@
 		<typeAlias type="com.sinc.sat.apply.model.vo.FinalScoreVO" alias="finalScore"/> 
 		<typeAlias type="com.sinc.sat.apply.model.vo.ApplicantQuesVO" alias="applicantQues"/>
 		
+
 	</typeAliases>
 </configuration>
 

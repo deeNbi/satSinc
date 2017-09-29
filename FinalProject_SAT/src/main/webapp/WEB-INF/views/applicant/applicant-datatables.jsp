@@ -30,8 +30,7 @@
 <body>
 	<div class="am-wrapper am-white-header am-fixed-sidebar">
 
-		<%@include
-			file="../include/navbar navbar-default navbar-fixed-top am-top-header.jsp"%>
+		<%@include file="../include/navbar navbar-default navbar-fixed-top am-top-header.jsp"%>
 		<%@include file="../include/am-left-sidebar.jsp"%>
 
 		<div class="am-content">
@@ -52,136 +51,27 @@
 								class="table table-striped table-hover table-fw-widget">
 								<thead>
 									<tr>
-										<th>지원번호</th>
-										<th>이름</th>
-										<th>직무</th>
-										<th>스펙</th>
-										<th>자기소개서점수</th>
-										<th>결과</th>
-										<th>체크</th>
+										<th width="16%">지원번호</th>
+										<th width="16%">이름</th>
+										<th width="16%">직무</th>
+										<th width="16%" >자기소개서점수</th>
+										<th width="16%">결과</th>
+										<th width="16%">체크</th>
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="odd gradeX">
-										<td class="center">1</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="applicantProfile.sat">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">2</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">3</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">4</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">5</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">6</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">7</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">8</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">9</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">10</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">11</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
-									<tr class="odd gradeX">
-										<td class="center">12</td>
-										<td class="center">전지민</td>
-										<td class="center">시스템개발/운영</td>
-										<td class="center">89</td>
-										<td class="center">자기소개서점수</td>
-										<td class="center"><a href="3">상세보기</a></td>
-										<td class="center"><input id="check1" type="checkbox"
-											class="needsclick needsclick"></td>
-									</tr>
+
+								<c:forEach items="${applicant}" var="ApplicantVO">							
+									<tr>
+										<td width="16%" class="center">${ApplicantVO.apply_no}</td>
+										<td width="16%" class="center">${ApplicantVO.name}</td>
+										<td width="16%" class="center">${ApplicantVO.job_app}</td>
+										<td width="16%" class="center">64</td>
+										<td width="16%" class="center"><a href="applicantProfile.sat">상세보기</a></td>
+										<td width="16%" class="center"><input id="check1" type="checkbox" class="needsclick needsclick"></td>
+									</tr>							
+								</c:forEach>
+
 								</tbody>
 							</table>
 

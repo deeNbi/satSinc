@@ -4,5 +4,90 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
 <mapper namespace="com.sinc.sat.mapper.apply">	<!-- 깊은 뎁스를 주는게 용이 -->
+
+
+
+	<!-- 지원자 / 각 전형 합격자 SELECT /////////////////////////////////////////////////////////////////////// -->
+	<!-- 전체지원자 -->
+	<select resultType="applicant"  id="listApplicant">
+		SELECT * 
+		FROM APPLICANT_TBL
+	</select>
+
+ 	<!-- 서류합격자 SELECT -->
+	<select resultType="applicant"  id="listApplicantPHSUC">
+		SELECT * 
+		FROM P_INTERVIEW_TBL
+	</select>
+	
+	 <!-- 1차면접 합격자 SELECT-->
+	<select resultType="applicant"  id="listApplicantFSUC">
+		SELECT * 
+		FROM F_INTERVIEW_TBL
+	</select>
+	
+	
+	 <!-- 2차면접 합격자 SELECT -->
+	<select resultType="applicant"  id="listApplicantSSUC">
+		SELECT * 
+		FROM S_INTERVIEW_TBL
+	</select>
+	
+	 <!-- 3차면접 합격자 SELECT -->
+	<select resultType="applicant"  id="listApplicantTSUC">
+		SELECT * 
+		FROM T_INTERVIEW_TBL
+	</select>
+	<!-- 지원자 / 각 전형 합격자 SELECT/////////////////////////////////////////////////////////////////////// -->
+	
+	
+	<!-- 각 전형 합격자 INSERT/////////////////////////////////////////////////////////////////////// -->
+	<!-- 서류합격자 insert -->
+	<insert id="insertPinterview" parameterType="applicant">
+		INSERT INTO PH_INTERVIEW_TBL (SELECT* FROM APPLICANT_TBL WHERE PH_SUC='Y')
+	</insert>
+	
+	<!-- 1차면접 합격자 insert -->
+	<insert id="insertFinterview" parameterType="applicant">
+		INSERT INTO F_INTERVIEW_TBL (SELECT* FROM APPLICANT_TBL WHERE F_SUC='Y')
+	</insert>
+	
+	<!-- 2차면접 합격자 insert -->
+	<insert id="insertSinterview" parameterType="applicant">
+		INSERT INTO S_INTERVIEW_TBL (SELECT* FROM APPLICANT_TBL WHERE S_SUC='Y')
+	</insert>
+	
+	<!-- 3차면접 합격자 insert -->
+	<insert id="insertTinterview" parameterType="applicant">
+		INSERT INTO T_INTERVIEW_TBL (SELECT* FROM APPLICANT_TBL WHERE T_SUC='Y')
+	</insert>
+	<!-- 각 전형 합격자 INSERT/////////////////////////////////////////////////////////////////////// -->
+	
+	
+	
+	
+<!-- 	CREATE TABLE PH_INTERVIEW_TBL(
+	APPLY_NO	NUMBER		    PRIMARY KEY,
+	NAME		VARCHAR2(20)	NOT NULL,
+	UNIV		VARCHAR2(50),
+	MAJOR		VARCHAR2(50),
+	POINT		NUMBER(1,2),
+	JOB_APP		VARCHAR2(50)	NOT NULL,
+	PH_CON1		VARCHAR2(2000)	        NOT NULL,
+    PH_CON2		VARCHAR2(2000)	        NOT NULL,
+    PH_CON3		VARCHAR2(2000)	        NOT NULL,
+   	PH_SUC		VARCHAR2(5)	    CHECK(PH_SUC IN('Y','N'))   NOT NULL,
+	F_SUC		VARCHAR2(5)	    CHECK(F_SUC IN('Y','N'))    NOT NULL,
+	S_SUC		VARCHAR2(5)	    CHECK(S_SUC IN('Y','N'))    NOT NULL,
+	T_SUC		VARCHAR2(5)	    CHECK(T_SUC IN('Y','N'))    NOT NULL,
+	GROUP_NO	NUMBER,
+	INTER_DATE	DATE    		NOT NULL,
+	APPLY_DATE	DATE	    	NOT NULL
+); -->
+	
+	
+	
+	
+	
 	
 </mapper>
