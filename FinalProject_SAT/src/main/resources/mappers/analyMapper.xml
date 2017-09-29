@@ -4,6 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
 <mapper namespace="com.sinc.sat.mapper.analy">	<!-- 깊은 뎁스를 주는게 용이 -->
+
 	
 		<select resultType="recruit"  id="listRecruit">
 		SELECT * 
@@ -12,4 +13,34 @@
  	
 	
 	
+
+	<select id="login" parameterType="emp" resultType="emp">
+		SELECT	EMP_NO, NAME, DEPT, JGRADE, PH_CON, USER_ID, USER_PWD, ADMIN_CK, SESSIONKEY, SESSIONLIMIT
+		FROM	EMPLOYEE_TBL
+		WHERE 	ID = #{id}
+		AND		PWD = #{pwd}
+	</select>
+	<update id="keepLogin" parameterType="java.util.HashMap">
+	<!-- 기존 사용자의 정보를 처리하기 위한 것. -->
+		UPDATE 	EMPLOYEE_TBL
+		SET		SESSIONKEY = #{sessionId},
+				SESSIONLIMIT = #{next}
+		WHERE	ID = #{id}
+	</update>
+	<select id="sessionCheck" parameterType="java.lang.String" resultType="emp">
+	<!-- 세션 유무 확인. -->
+		SELECT	EMP_NO, NAME, DEPT, JGRADE, PH_CON, USER_ID, USER_PWD, ADMIN_CK
+		FROM	SPRING_USER_TBL
+		WHERE	SESSIONKEY = #{value}
+		AND		SESSIONLIMIT > SYSDATE
+	</select>
+	<update id="removeCookie" parameterType="java.util.HashMap">
+		UPDATE	SPRING_USER_TBL
+		SET		SESSIONLIMIT = #{next}
+		WHERE	SESSIONKEY=#{sessionId}
+	</update>
+
+
+
+
 </mapper>

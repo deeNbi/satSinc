@@ -18,12 +18,10 @@ public class ApplicantVO {
 	private	char	s_suc;
 	private	char	t_suc;
 	private Date	apply_date;
-	
 	public ApplicantVO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
 	public ApplicantVO(int apply_no, String name, String univ, String major,
 			int point, int langu, String job_app, String ph_con1,
 			String ph_con2, String ph_con3, char ph_suc, char f_suc,

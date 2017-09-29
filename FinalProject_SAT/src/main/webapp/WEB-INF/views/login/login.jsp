@@ -42,12 +42,12 @@
                 
                   <div class="form-group">                  
                     <div class="input-group"><span class="input-group-addon"><i class="icon s7-user"></i></span>
-                      <input id="username" type="text" placeholder="Username" autocomplete="off" class="form-control">
+                      <input id="username" name="id" type="text" placeholder="USER ID" autocomplete="off" class="form-control">
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="input-group"><span class="input-group-addon"><i class="icon s7-lock"></i></span>
-                      <input id="password" type="password" placeholder="Password" class="form-control">
+                      <input id="password" name="pwd" type="password" placeholder="Password" class="form-control">
                     </div>
                   </div>
                   

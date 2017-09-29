@@ -35,30 +35,28 @@
          	<div class="panel-heading"><span><h1>Login</h1></span></div>          
             <div class="panel-heading"><span><h4>Please enter your user information.</h4></span></div>
             <div class="panel-body">
-              <form action="index.html" method="get" class="form-horizontal">
+              <form action="index.html" method="post" class="form-horizontal">
                 <div class="login-form">
-                
                   <div class="form-group">                  
                     <div class="input-group"><span class="input-group-addon"><i class="s7-id"></i></span>
-                      <input id="username" type="text" placeholder="User ID" autocomplete="off" class="form-control">
+                      <input id="id" type="text" placeholder="User ID" autocomplete="off" class="form-control">
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="input-group"><span class="input-group-addon"><i class="s7-lock"></i></span>
-                      <input id="password" type="password" placeholder="Password" class="form-control">
+                      <input type="password" name="pwd" placeholder="Password" class="form-control">
                     </div>
                   </div>
                   
                   <div class="form-group login-submit">
-                    <button data-dismiss="modal" type="submit" class="btn btn-primary btn-lg">Log me in</button>
+                    <button data-dismiss="modal" type="submit" class="btn btn-primary btn-lg">Sign in</button>
                   </div>
                   
                   <div class="form-group footer row">
-                    <div class="col-xs-6"><a href="#">Forgot Password?</a></div>
                     <div class="col-xs-6 remember">
                       <label for="remember">Remember Me</label>
                       <div class="am-checkbox">
-                        <input type="checkbox" id="remember" class="needsclick">
+                        <input type="checkbox" name="useCookie" id="remember" class="needsclick">
                         <label for="remember"></label>
                       </div>
                     </div>

@@ -44,23 +44,50 @@
 	<!-- 각 전형 합격자 INSERT/////////////////////////////////////////////////////////////////////// -->
 	<!-- 서류합격자 insert -->
 	<insert id="insertPinterview" parameterType="applicant">
-		INSERT INTO P_INTERVIEW_TBL VALUES(SELECT* FROM APPLICANT_TBL WHERE #{ph_suc}='Y') 
+		INSERT INTO PH_INTERVIEW_TBL (SELECT* FROM APPLICANT_TBL WHERE PH_SUC='Y')
 	</insert>
 	
 	<!-- 1차면접 합격자 insert -->
 	<insert id="insertFinterview" parameterType="applicant">
-		INSERT INTO F_INTERVIEW_TBL VALUES(SELECT* FROM APPLICANT_TBL WHERE #{f_suc}='Y') 
+		INSERT INTO F_INTERVIEW_TBL (SELECT* FROM APPLICANT_TBL WHERE F_SUC='Y')
 	</insert>
 	
 	<!-- 2차면접 합격자 insert -->
 	<insert id="insertSinterview" parameterType="applicant">
-		INSERT INTO S_INTERVIEW_TBL VALUES(SELECT* FROM APPLICANT_TBL WHERE #{s_suc}='Y') 
+		INSERT INTO S_INTERVIEW_TBL (SELECT* FROM APPLICANT_TBL WHERE S_SUC='Y')
 	</insert>
 	
 	<!-- 3차면접 합격자 insert -->
 	<insert id="insertTinterview" parameterType="applicant">
-		INSERT INTO T_INTERVIEW_TBL VALUES(SELECT* FROM APPLICANT_TBL WHERE #{t_suc}='Y') 
+		INSERT INTO T_INTERVIEW_TBL (SELECT* FROM APPLICANT_TBL WHERE T_SUC='Y')
 	</insert>
 	<!-- 각 전형 합격자 INSERT/////////////////////////////////////////////////////////////////////// -->
+	
+	
+	
+	
+<!-- 	CREATE TABLE PH_INTERVIEW_TBL(
+	APPLY_NO	NUMBER		    PRIMARY KEY,
+	NAME		VARCHAR2(20)	NOT NULL,
+	UNIV		VARCHAR2(50),
+	MAJOR		VARCHAR2(50),
+	POINT		NUMBER(1,2),
+	JOB_APP		VARCHAR2(50)	NOT NULL,
+	PH_CON1		VARCHAR2(2000)	        NOT NULL,
+    PH_CON2		VARCHAR2(2000)	        NOT NULL,
+    PH_CON3		VARCHAR2(2000)	        NOT NULL,
+   	PH_SUC		VARCHAR2(5)	    CHECK(PH_SUC IN('Y','N'))   NOT NULL,
+	F_SUC		VARCHAR2(5)	    CHECK(F_SUC IN('Y','N'))    NOT NULL,
+	S_SUC		VARCHAR2(5)	    CHECK(S_SUC IN('Y','N'))    NOT NULL,
+	T_SUC		VARCHAR2(5)	    CHECK(T_SUC IN('Y','N'))    NOT NULL,
+	GROUP_NO	NUMBER,
+	INTER_DATE	DATE    		NOT NULL,
+	APPLY_DATE	DATE	    	NOT NULL
+); -->
+	
+	
+	
+	
+	
 	
 </mapper>

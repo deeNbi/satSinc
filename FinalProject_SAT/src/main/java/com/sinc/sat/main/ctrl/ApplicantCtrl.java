@@ -18,26 +18,6 @@ public class ApplicantCtrl {
 	@Resource(name = "applyService")
 	private ApplyService service;
 	
-	
-	
-////////////////////////////////////////////////////////////////////////////////////////
-	//로그인
-	@RequestMapping("/login.sat")
-	public String login() {
-		System.out.println("Ctrl login");
-		return "login/login";
-	}
-/*	
-	//로그아웃
-	@RequestMapping("/logout.sat")
-	public String logout() {
-		System.out.println("Ctrl logout");
-		return null;
-	}
-
-	*/
-	
-////////////////////////////////////////////////////////////////////////////////////////
 	//지원자분석
 	@RequestMapping("/applicantDatatables.sat")
 	public String applicantDatatables(Model model) {
@@ -77,7 +57,7 @@ public class ApplicantCtrl {
 	public String groupDatatablesSecond(Model model, ApplicantVO fApplicant) {
 		System.out.println("Ctrl groupDatatablesSecond");
 		
-		service.insertPinterview(fApplicant);
+		service.insertFinterview(fApplicant);
 		
 		List<ApplicantVO> resultfApplicant = service.listApplicantFSUC();
 		model.addAttribute("fApplicant", resultfApplicant);
@@ -90,7 +70,7 @@ public class ApplicantCtrl {
 	public String groupDatatablesThird(Model model, ApplicantVO sApplicant) {
 		System.out.println("Ctrl groupDatatablesThird");
 		
-		service.insertPinterview(sApplicant);
+		service.insertSinterview(sApplicant);
 		
 		List<ApplicantVO> resultsApplicant = service.listApplicantSSUC();
 		model.addAttribute("sApplicant", resultsApplicant);
